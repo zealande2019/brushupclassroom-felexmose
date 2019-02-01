@@ -12,6 +12,7 @@ namespace ClassRoom
         public int fødselsmåned;
         public int fødselsdag;
 
+
         public Studerende(string name, int fødselsmåned, int fødselsdag )
         {
             this.Navn = name;
@@ -19,5 +20,7 @@ namespace ClassRoom
             this.fødselsdag = fødselsdag;
 
         }
+
+
     }
 }
