@@ -35,5 +35,10 @@ namespace ClassRoom
                 return "Efterår";
             }
         }
+
+        public void HvorMangeHarFdslHvertÅrtid(List<Studerende> lst)
+        {
+
+        }
     }
 }
