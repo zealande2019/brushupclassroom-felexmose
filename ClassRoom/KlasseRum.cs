@@ -8,9 +8,11 @@ namespace ClassRoom
 {
     class KlasseRum
     {
-        private string klasseNavn;
-        private List<Studerende> klasseliste;
-        private DateTime SemesterStart;
+        public string KlasseNavn;
+        public List<Studerende> Klasseliste;
+        public DateTime SemesterStart;
+
+
 
         public KlasseRum()
         {
