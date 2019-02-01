@@ -17,6 +17,7 @@ namespace ClassRoom
             this.Navn = name;
             this.fødselsmåned = fødselsmåned;
             this.fødselsdag = fødselsdag;
+
         }
     }
 }
