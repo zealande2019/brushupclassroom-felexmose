@@ -30,10 +30,8 @@ namespace ClassRoom
 
             foreach (Studerende item in Semester3.Klasseliste)
             {
-                Console.WriteLine(item.Navn);
-                Console.WriteLine(item.fødselsdag);
-                Console.WriteLine(item.fødselsmåned);
-
+                Console.WriteLine($"Navn:{item.Navn} og fødselsdato:{item.fødselsdag}/{item.fødselsmåned}");
+               
             }
                    
         }

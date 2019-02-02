@@ -38,7 +38,12 @@ namespace ClassRoom
 
         public void HvorMangeHarFdslHvertÅrtid(List<Studerende> lst)
         {
+            int vinter;
+            int forår;
+            int sommer;
+            int efterår;
 
+          
         }
     }
 }
