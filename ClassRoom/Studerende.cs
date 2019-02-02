@@ -15,9 +15,20 @@ namespace ClassRoom
 
         public Studerende(string name, int fødselsmåned, int fødselsdag )
         {
-            this.Navn = name;
-            this.fødselsmåned = fødselsmåned;
-            this.fødselsdag = fødselsdag;
+            // for at sørger for at der indtastes te tal mellem 1-12 som fødselsmåned
+            // kræver det premium bruger, kode er såledels : Contract.Requires(fødselsmåned<12 && fødselsmåned >1);
+
+            if (fødselsmåned<1 && fødselsmåned > 12)
+            {
+                 throw new ArgumentNullException();
+                
+            } else
+            {
+                this.Navn = name;
+                this.fødselsmåned = fødselsmåned;
+                this.fødselsdag = fødselsdag;
+            }
+            
 
         }
 

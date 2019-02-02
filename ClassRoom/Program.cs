@@ -17,13 +17,14 @@ namespace ClassRoom
                 SemesterStart = new DateTime(2018, 9, 4),
 
             };
-
+            //Studerende james = new Studerende("james", 13, 25);
             Studerende felex = new Studerende("felex", 12,27);
             Studerende hasan = new Studerende("hasan", 03, 10);
             Studerende claus = new Studerende("claus", 11, 14);
 
             Semester3.Klasseliste = new List<Studerende>
             {
+                //james,
                 felex,
                 hasan,
                 claus
