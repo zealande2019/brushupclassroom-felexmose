@@ -19,7 +19,7 @@ namespace ClassRoom
 
         }
 
-        public string Årstid(Studerende st)
+        public static string Årstid(Studerende st)
         {
             if(st.fødselsmåned == 12 || st.fødselsmåned == 1 || st.fødselsmåned==2)
             {
@@ -36,14 +36,34 @@ namespace ClassRoom
             }
         }
 
-        public void HvorMangeHarFdslHvertÅrtid(List<Studerende> lst)
+        public static void HvrMngeHarFdslHvrtÅrtd(List<Studerende> lst)
         {
-            int vinter;
-            int forår;
-            int sommer;
-            int efterår;
+            int vinter = 0;
+            int forår = 0;
+            int sommer = 0;
+            int efterår = 0;
+            
+            foreach(Studerende item in lst)
+            {
+                if (item.fødselsmåned == 12 || item.fødselsmåned == 1 || item.fødselsmåned == 2)
+                {
+                    vinter++;
+                } else if (item.fødselsmåned == 3 || item.fødselsmåned == 4 || item.fødselsmåned == 5)
+                {
+                    forår++;
+                }else if (item.fødselsmåned == 6 || item.fødselsmåned == 7 || item.fødselsmåned == 8)
+                {
+                    sommer++;
+                } else
+                {
+                    efterår++;
+                }
+            }
 
-          
+            Console.WriteLine($"{vinter} har fødselsdag om vinteren");
+            Console.WriteLine($"{forår} har fødselsdag om foråret");
+            Console.WriteLine($"{sommer} har fødselsdag om sommeren");
+            Console.WriteLine($"{efterår} har fødselsdag om efteråret");
         }
     }
 }

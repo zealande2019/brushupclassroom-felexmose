@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ClassRoom
 {
     class Program
@@ -33,6 +34,9 @@ namespace ClassRoom
                 Console.WriteLine($"Navn:{item.Navn} og fødselsdato:{item.fødselsdag}/{item.fødselsmåned}");
                
             }
+
+            KlasseRum.HvrMngeHarFdslHvrtÅrtd(Semester3.Klasseliste);
+            
                    
         }
     }
